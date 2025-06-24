@@ -23,4 +23,204 @@
             }
         }
     </script>
-    <
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-globe-americas text-primary text-2xl"></i>
+                <a href="index.html" class="text-2xl font-bold text-gray-800">МирВокругНас</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-primary">Главная</a>
+                <a href="tours.html" class="text-gray-600 hover:text-primary">Туры</a>
+                <a href="destinations.html" class="text-gray-600 hover:text-primary">Направления</a>
+                <a href="about.html" class="text-primary font-semibold hover:text-secondary">О нас</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary">Контакты</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-primary"><i class="fas fa-search"></i></a>
+                <a href="tel:+78001234567" class="hidden md:block bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">+7 (800) 123-45-67</a>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Hero -->
+    <section class="relative h-64 bg-gray-900 flex items-center">
+        <img src="https://picsum.photos/1920/1080?random=30" alt="Команда путешественников" class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-4 relative z-10 text-white text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">О нашей компании</h1>
+            <p class="text-lg">Узнайте больше о нашей миссии и команде</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Наша история</h2>
+                <div class="prose prose-lg text-gray-600">
+                    <p>МирВокругНас был основан в 2010 году группой энтузиастов путешествий, которые хотели делиться своими знаниями и опытом с другими. Начав с небольших групповых туров по Европе, мы постепенно расширили географию наших путешествий до всех уголков земного шара.</p>
+                    
+                    <p class="mt-4">За 13 лет работы мы организовали более 1500 туров для 20 000 довольных клиентов. Наша команда состоит из профессиональных гидов, менеджеров по туризму и логистов, которые работают над тем, чтобы каждое ваше путешествие было незабываемым.</p>
+                    
+                    <h3 class="text-2xl font-bold mt-8 mb-4">Наша миссия</h3>
+                    <p>Мы верим, что путешествия должны быть доступными, безопасными и наполненными яркими эмоциями. Наша цель - помочь вам открыть для себя мир, познакомиться с разными культурами и создать воспоминания, которые останутся с вами на всю жизнь.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Наша команда</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://picsum.photos/300/300?random=31" alt="Алексей Петров" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Алексей Петров</h3>
+                    <p class="text-primary font-semibold mb-2">Основатель и CEO</p>
+                    <p class="text-gray-600">Более 15 лет опыта в туристическом бизнесе. Организовал экспедиции в 50+ стран.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://picsum.photos/300/300?random=32" alt="Елена Смирнова" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Елена Смирнова</h3>
+                    <p class="text-primary font-semibold mb-2">Директор по туризму</p>
+                    <p class="text-gray-600">Специалист по индивидуальным турам. Знает все о визах и логистике.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://picsum.photos/300/300?random=33" alt="Дмитрий Иванов" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Дмитрий Иванов</h3>
+                    <p class="text-primary font-semibold mb-2">Гид-эксперт</p>
+                    <p class="text-gray-600">Автор уникальных маршрутов. Провел более 200 экскурсий по всему миру.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Наши ценности</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hand-holding-heart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Забота о клиентах</h3>
+                    <p class="text-gray-600">Мы внимательно относимся к каждому клиенту и подбираем тур, который соответствует именно вашим интересам.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Профессионализм</h3>
+                    <p class="text-gray-600">Наша команда - это эксперты с многолетним опытом в организации путешествий любой сложности.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Устойчивый туризм</h3>
+                    <p class="text-gray-600">Мы поддерживаем ответственный туризм, который уважает местные культуры и минимизирует воздействие на природу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-globe-americas text-primary mr-2"></i>
+                        МирВокругНас
+                    </h3>
+                    <p class="text-gray-400">Откройте для себя мир с нашими эксклюзивными турами по всему миру.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Навигация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Главная</a></li>
+                        <li><a href="tours.html" class="text-gray-400 hover:text-white">Туры</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Направления</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">О нас</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Контакты</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Москва, ул. Туристическая, 15</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +7 (800) 123-45-67</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@mirvokrugnas.ru</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Мы в соцсетях</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 МирВокругНас. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+            mobileMenu.innerHTML = `
+                <button class="absolute top-4 right-4 text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex flex-col space-y-6 text-center">
+                    <a href="index.html" class="text-2xl font-semibold text-gray-600">Главная</a>
+                    <a href="tours.html" class="text-2xl font-semibold text-gray-600">Туры</a>
+                    <a href="destinations.html" class="text-2xl font-semibold text-gray-600">Направления</a>
+                    <a href="about.html" class="text-2xl font-semibold text-primary">О нас</a>
+                    <a href="contact.html" class="text-2xl font-semibold text-gray-600">Контакты</a>
+                </div>
+            `;
+            
+            document.body.appendChild(mobileMenu);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+            
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
