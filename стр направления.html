@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Направления | МирВокругНас</title>
+    <meta name="description" content="Все направления для путешествий от туроператора МирВокругНас">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563eb",
+                        secondary: "#1e40af",
+                        accent: "#f59e0b"
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-globe-americas text-primary text-2xl"></i>
+                <a href="index.html" class="text-2xl font-bold text-gray-800">МирВокругНас</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-primary">Главная</a>
+                <a href="tours.html" class="text-gray-600 hover:text-primary">Туры</a>
+                <a href="destinations.html" class="text-primary font-semibold hover:text-secondary">Направления</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary">О нас</a>
+                <a href="contact.html" class="text-gray-600 hover:text-primary">Контакты</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-primary"><i class="fas fa-search"></i></a>
+                <a href="tel:+78001234567" class="hidden md:block bg-primary text-white px-4 py-2 rounded-lg hover:bg-secondary transition">+7 (800) 123-45-67</a>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Destinations Hero -->
+    <section class="relative h-64 bg-gray-900 flex items-center">
+        <img src="https://picsum.photos/1920/1080?random=20" alt="Карта мира" class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="container mx-auto px-4 relative z-10 text-white text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Направления</h1>
+            <p class="text-lg">Откройте для себя лучшие места для путешествий</p>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Исследуйте мир</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Мы предлагаем туры в самые удивительные уголки нашей планеты</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Europe -->
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://picsum.photos/600/400?random=21" alt="Европа" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Европа</h3>
+                            <p class="mb-4">Культурные столицы и живописные пейзажи</p>
+                            <a href="destination-europe.html" class="inline-block border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Asia -->
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://picsum.photos/600/400?random=22" alt="Азия" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Азия</h3>
+                            <p class="mb-4">Экзотика, древние традиции и современные мегаполисы</p>
+                            <a href="destination-asia.html" class="inline-block border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- America -->
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://picsum.photos/600/400?random=23" alt="Америка" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Америка</h3>
+                            <p class="mb-4">От Аляски до Огненной Земли - континент контрастов</p>
+                            <a href="destination-america.html" class="inline-block border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Africa -->
+                <div class="relative group overflow-hidden rounded-xl h-64">
+                    <img src="https://picsum.photos/600/400?random=24" alt="Африка" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Африка</h3>
+                            <p class="mb-4">Сафари, пустыни и уникальная природа</p>
+                            <a href="destination-africa.html" class="inline-block border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-gray-900 transition">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Popular Cities -->
+                <div class="bg-gray-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">Популярные города</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <a href="#" class="hover:text-primary hover:underline">Париж, Франция</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <a href="#" class="hover:text-primary hover:underline">Рим, Италия</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <a href="#" class="hover:text-primary hover:underline">Бангкок, Тайланд</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <a href="#" class="hover:text-primary hover:underline">Нью-Йорк, США</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <a href="#" class="hover:text-primary hover:underline">Токио, Япония</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Best Time to Visit -->
+                <div class="bg-gray-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">Лучшее время для посещения</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold">Европа</h4>
+                            <p class="text-gray-600">Май-сентябрь - идеальное время для поездки</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Азия</h4>
+                            <p class="text-gray-600">Ноябрь-февраль - комфортная температура</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Америка</h4>
+                            <p class="text-gray-600">Круглый год, зависит от региона</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-globe-americas text-primary mr-2"></i>
+                        МирВокругНас
+                    </h3>
+                    <p class="text-gray-400">Откройте для себя мир с нашими эксклюзивными турами по всему миру.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Навигация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Главная</a></li>
+                        <li><a href="tours.html" class="text-gray-400 hover:text-white">Туры</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white">Направления</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">О нас</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Контакты</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Москва, ул. Туристическая, 15</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +7 (800) 123-45-67</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@mirvokrugnas.ru</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Мы в соцсетях</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 МирВокругНас. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+            mobileMenu.innerHTML = `
+                <button class="absolute top-4 right-4 text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex flex-col space-y-6 text-center">
+                    <a href="index.html" class="text-2xl font-semibold text-gray-600">Главная</a>
+                    <a href="tours.html" class="text-2xl font-semibold text-gray-600">Туры</a>
+                    <a href="destinations.html" class="text-2xl font-semibold text-primary">Направления</a>
+                    <a href="about.html" class="text-2xl font-semibold text-gray-600">О нас</a>
+                    <a href="contact.html" class="text-2xl font-semibold text-gray-600">Контакты</a>
+                </div>
+            `;
+            
+            document.body.appendChild(mobileMenu);
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+            
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
